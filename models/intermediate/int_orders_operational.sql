@@ -13,4 +13,4 @@ FROM  {{ref("int_orders_margin")}} o
 LEFT JOIN {{ ref('stg_gz_raw_data__raw_gz_ship') }} s 
 USING(orders_id)
 ORDER BY 
-  orders_id DESC;
+  orders_id DESC
